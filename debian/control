@@ -1,0 +1,27 @@
+Source: libterm-readkey-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 9.20120312),
+               perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Niko Tyni <ntyni@debian.org>,
+           Damyan Ivanov <dmn@debian.org>,
+           Florian Schlichting <fsfs@debian.org>
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/TermReadKey
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libterm-readkey-perl.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libterm-readkey-perl.git
+Testsuite: autopkgtest-pkg-perl
+
+Package: libterm-readkey-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: perl module for simple terminal control
+ Term::ReadKey is a compiled perl module dedicated to providing simple
+ control over terminal driver modes (cbreak, raw, cooked, etc.) support for
+ non-blocking reads, if the architecture allows, and some generalized handy
+ functions for working with terminals. One of the main goals is to have the
+ functions as portable as possible, so you can just plug in "use
+ Term::ReadKey" on any architecture and have a good likelyhood of it working.

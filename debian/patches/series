@@ -1,0 +1,2 @@
+0001-Totally-bail-on-the-02_terminal_functions.t-if-STDIN.patch
+skip-no-tty.patch
